@@ -1,26 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Form1 from './Form1';
+import Form2 from './Form2';
+import Success from './Success';
 
-function App() {
+const App: React.FC = () => {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Router>
+          <Routes>
+            <Route path="/" element={<Form1 />} />
+            <Route path="/form2" element={<Form2 />} />
+            <Route path="/success" element={<Success />} />
+          </Routes>
+        </Router>
       </header>
     </div>
+
   );
-}
+};
 
 export default App;
+

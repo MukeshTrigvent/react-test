@@ -1,0 +1,50 @@
+.tableSection {
+    padding: 20px;
+}
+
+.dataTableWrapper {
+    width: 100%;
+    // overflow-x: auto;
+}
+
+.tableWrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 16px;
+    border: 1px solid #ddd;
+}
+
+.table th,
+.table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.table th {
+    background-color: #f2f2f2;
+}
+
+// Add hover effect on table rows
+.table tbody tr:hover {
+    background-color: #f5f5f5;
+}
+
+// Style the scrollbar for the overflow
+.tableWrapper::-webkit-scrollbar {
+    width: 12px;
+}
+
+.tableWrapper::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 6px;
+}
+
+.tableWrapper::-webkit-scrollbar-track {
+    background-color: #eee;
+}
